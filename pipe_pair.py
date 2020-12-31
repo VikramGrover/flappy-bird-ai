@@ -6,12 +6,12 @@ from constants import *
 class PipePair:
     GAP = PIPE_GAP
     VELOCITY = GROUND_AND_PIPE_VELOCITY
-    TOP_PIPE_IMG = pygame.transform.flip(PIP_IMG, False, True)
-    BOTTOM_PIPE_IMG = PIP_IMG
+    TOP_PIPE_IMG = pygame.transform.flip(PIPE_IMG, False, True)
+    BOTTOM_PIPE_IMG = PIPE_IMG
 
     def __init__(self, x):
         self.x = x
-        self.height = random.randrange(50, 350)
+        self.height = random.randrange(HIGHEST_PIPE_GAP, LOWEST_PIPE_GAP)
         self.top = self.height - self.TOP_PIPE_IMG.get_height()
         self.bottom = self.height + self.GAP
         self.passed = False
