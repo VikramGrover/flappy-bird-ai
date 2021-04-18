@@ -3,4 +3,4 @@ A flappy bird AI created using Python
 
 # Here is a demo of the AI playing the game
 
-<img src="flappybird_ai_demo.gif" width="700" height="468"/>
+<img src="flappybird_ai_demo.gif" width="800" height="535"/>
